@@ -46,23 +46,23 @@ He logrado avanzar en los siguientes requerimientos técnicos:
 - Reemplazar el archivo `.env.template` por `.env` y llenarlo con `http://localhost:8080/api`
 
 ```bash
-  PORT=PORT
+  PORT=8080
 
   # DB
-  DB_HOST=DB_HOST
-  DB_PORT=DB_PORT
-  DB_USER_NAME=DB_USER_NAME
-  DB_PASSWORD=DB_PASSWORD
-  DB_NAME=DB_NAME
+  DB_HOST=localhost
+  DB_PORT=5432
+  DB_USER_NAME=postgres
+  DB_PASSWORD=postgres_tupaca_db_password
+  DB_NAME=tupaca_db
 
   # JWT
-  JWT_SECRET=JWT_SECRET
+  JWT_SECRET=secret
 ```
 
-- Ir a la carpeta del Backend
+- Instalar pnpm en caso de no tenerlo
 
 ```bash
-  cd tupaca_challenge_backend
+  npm install -g pnpm
 ```
 
 - Instalar las dependencias
@@ -80,7 +80,7 @@ He logrado avanzar en los siguientes requerimientos técnicos:
 - Arrancar el proyecto
 
 ```bash
-  pnpm run dev |  pnpm run dev
+  pnpm run dev
 ```
 
 ## Environment Variables
