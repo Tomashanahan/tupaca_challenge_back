@@ -5,7 +5,7 @@ import { User } from "../users/entities";
 export const getAllTasks = async (req: Request, res: Response) => {
   try {
     const { title, orderByDate, orderByTitle } = req.query;
-    const { id } = req.user;
+    const { id }: any = req.user;
 
     const taskRepository = Task;
 
